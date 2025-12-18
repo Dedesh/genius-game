@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(15, 12, 66);
+}
+
+h1 {
+    color:bisque;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#screen {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#grid-container {
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    gap: 3vw;
+}
+
+#grid-container button {
+    height: 250px;
+    width: 250px;
+    border: 6px solid black;
+    border-radius: 30%;
+}
+
+#roxo {
+    background-color: #871fff;
+}
+
+#laranja {
+    background-color: #e95313;
+}
+
+#amarelo {
+    background-color: #fdd41a;
+}
+
+#azul {
+    background-color: #22ecdc;
+}
+
+.apertado {
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.game-over {
+    background-color: #991a1aff !important;
+}
+
+@media (max-width: 700px) {
+    #grid-container button {
+        height: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    #grid-container button {
+        height: 40vw;
+        width: 40vw;
+    }
+}
